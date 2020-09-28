@@ -446,6 +446,7 @@ font-family: 'Roboto Condensed', sans-serif;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    
 
 
 }
@@ -455,9 +456,14 @@ font-family: 'Roboto Condensed', sans-serif;
     width: 26%;
     text-align: center;
     padding-bottom: 40px;
+   
+    
 
 }
 
+.work__img{
+    width: 100%;
+}
 
 .work__item-title{
     font-family: Gotham;
