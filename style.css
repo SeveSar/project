@@ -654,10 +654,13 @@ font-family: 'Roboto Condensed', sans-serif;
 
 }
 
+.team__item-img{
+    flex-shrink: 0;
+}
 .team__item{
     width: 25%;
     padding: 0 18px;
-    margin: 0 -10px;
+    margin: 0 -18px;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -675,12 +678,7 @@ font-family: 'Roboto Condensed', sans-serif;
     min-width: 216px;
 
 }
-.team__item-img{
 
-
-
-
-}
 
 .team__item-name{
    font-family: Gotham;
