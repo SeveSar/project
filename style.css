@@ -815,3 +815,38 @@ font-family: 'Roboto Condensed', sans-serif;
 .form-action__btn:hover{
     background-color: #074e6c;
 }
+
+.map {
+    width: 100%;
+    height: 332px;
+    border: none;
+    outline: none;
+
+    
+}
+
+
+/*=======================================
+
+
+              FOOTER
+
+
+========================================*/
+
+.footer{
+    background-color: #222222;
+    padding: 50px 0 65px 0;
+    color: #ffffff;
+    font-family: Roboto;
+    font-size: 15px;
+    line-height: 2.77;
+    letter-spacing: 0.26px;
+    margin-top: -7px;
+}
+
+.footer__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
