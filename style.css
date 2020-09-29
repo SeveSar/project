@@ -1,3 +1,23 @@
+@font-face {
+    font-family: 'Gotham';
+    src: local('Gotham Medium'), local('Gotham-Medium'),
+        url('Gotham-Medium.woff2') format('woff2'),
+        url('Gotham-Medium.woff') format('woff'),
+        url('Gotham-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+  }
+
+@font-face {
+    font-family: 'Gotham';
+    src: local('Gotham Book'), local('Gotham-Book'),
+        url('./fonts/Gotham-Book.woff2') format('woff2'),
+        url('./fonts/Gotham-Book.woff') format('woff'),
+        url('./fonts/Gotham-Book.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+
 body {
     margin: 0;
     line-height: 1.6;
@@ -171,7 +191,7 @@ img{
 .intro__text{
     line-height: 2;
     font-size: 25.5px;
-    font-family: Gotham;
+    font-family: 'Gotham';
     font-weight: 500;
     letter-spacing: 18.87px;
     color: #11749e;
@@ -251,10 +271,11 @@ font-family: 'Roboto Condensed', sans-serif;
 
 .title{
     text-align: center;
-    font-family: Gotham;
+    font-family: 'Gotham', sans-serif;
     font-size: 37.5px;
     font-weight: 500;
     line-height: 1.2;
+    text-transform: uppercase;
 
 
 }
@@ -303,7 +324,7 @@ font-family: 'Roboto Condensed', sans-serif;
 
 .feature__block-title{
     text-transform: uppercase;
-    font-family: Gotham;
+    font-family: 'Gotham';
     font-size: 18px;
     font-weight: 500;
     line-height: 2;
@@ -314,7 +335,7 @@ font-family: 'Roboto Condensed', sans-serif;
 
 .feature__block-text{
     text-align: center;
-    font-family: Gotham;
+    font-family: 'Gotham';
     font-weight: normal;
     font-size: 15px;
     color: #ffffff;
@@ -362,7 +383,7 @@ font-family: 'Roboto Condensed', sans-serif;
 
 
 .content-block__date{
-    font-family: Gotham;
+    font-family: 'Gotham';
     line-height: 1.85;
     font-size: 13px;
     margin-bottom: 5px;
@@ -373,7 +394,7 @@ font-family: 'Roboto Condensed', sans-serif;
     margin: 0 8px;
 }
 .content__block-title{
-    font-family: Gotham;
+    font-family: 'Gotham';
     font-size: 25px;
     font-weight: 500;
     line-height: 1.44;
@@ -383,7 +404,7 @@ font-family: 'Roboto Condensed', sans-serif;
 .content-block__text{
     width: 78.8%;
     font-size: 15px;
-    font-family: Gotham;
+    font-family: 'Gotham';
 
 }
 
@@ -434,6 +455,7 @@ font-family: 'Roboto Condensed', sans-serif;
     position: relative;
     top: -135px;
     text-transform: uppercase;
+    
 
 
 }
@@ -442,7 +464,8 @@ font-family: 'Roboto Condensed', sans-serif;
 .work__text{
     text-align: center;
     line-height: 1.23;
-    font-family: Gotham;
+    font-family: 'Gotham';
+    /* font-weight: 500; */
     color: #222222;
     font-size: 30px;
     margin-top: -25px
@@ -474,7 +497,7 @@ font-family: 'Roboto Condensed', sans-serif;
 
 .work__item-title{
     
-    font-family: Gotham;
+    font-family: 'Gotham';
     font-size: 18px;
     font-weight: 500;
     
@@ -492,8 +515,8 @@ font-family: 'Roboto Condensed', sans-serif;
 }
 
 .work__item-text{
-      font-family: Gotham;
-      font-size: 15px;
+    font-family: 'Gotham';
+    font-size: 15px;
     color: #222222;
 }
 
@@ -540,7 +563,7 @@ font-family: 'Roboto Condensed', sans-serif;
 .quick-action__item-text{
 
     font-size: 15px;
-    font-family: Gotham;
+    font-family: 'Gotham';
     color: #ffffff;
 
 }
@@ -593,7 +616,7 @@ font-family: 'Roboto Condensed', sans-serif;
 
 .key-feature__text{
     width: 77%;
-    font-family: Gotham;
+    font-family: 'Gotham';
     font-size: 15px;
 
 }
@@ -656,7 +679,7 @@ font-family: 'Roboto Condensed', sans-serif;
 
 .team__text{
     text-align: center;
-    font-family: Gotham;
+    font-family: 'Gotham';
     font-size: 30px;
      color: #222222;
     line-height: 1.23;
@@ -780,7 +803,8 @@ font-family: 'Roboto Condensed', sans-serif;
     font-size: 15px;
     line-height: 2.4;
     letter-spacing: 0.3px;
-    font-family: Gotham;
+    font-family: 'Gotham';
+    font-weight: normal;
 }
 .form-action__inner__private-date > input:nth-child(n + 2):invalid{
     border-color: red;
@@ -805,7 +829,8 @@ font-family: 'Roboto Condensed', sans-serif;
 }
 .form-action__inner__textarea::placeholder{
     color: #ffffff;
-    font-family: Gotham;
+    font-family: 'Gotham';
+    font-weight: normal;
     font-size: 15px;
     letter-spacing: 0.3px;
     
@@ -818,7 +843,8 @@ font-family: 'Roboto Condensed', sans-serif;
     padding: 13px 0 23px 0;
     background-color: #11749e;
     color: #ffffff;
-    font-family: Gotham;
+    font-family: 'Gotham';
+    font-weight: 500;
     font-size: 24px;
     outline: none;
     cursor: pointer;
