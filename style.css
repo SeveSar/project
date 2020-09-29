@@ -473,11 +473,22 @@ font-family: 'Roboto Condensed', sans-serif;
 }
 
 .work__item-title{
+    
     font-family: Gotham;
     font-size: 18px;
     font-weight: 500;
-    color: #11749e;
+    
     margin: 34px 0 16px 0;
+}
+
+.work__item-title__link{
+    text-decoration: none;
+    color: #11749e;
+    transition: color .2s linear;
+}
+
+.work__item-title__link:hover{
+    color: #036b97;
 }
 
 .work__item-text{
