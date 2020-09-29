@@ -368,6 +368,7 @@ font-family: 'Roboto Condensed', sans-serif;
     line-height: 1.85;
     font-size: 13px;
     margin-bottom: 5px;
+    font-weight: normal;
 }
 
 .content-block__date > span:before{
