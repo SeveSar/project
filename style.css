@@ -212,6 +212,7 @@ img {
 }
 
 .intro__text {
+  width: 100%;
   line-height: 2;
   font-size: 25.5px;
   font-family: "Gotham";
