@@ -5,6 +5,13 @@
         height: auto;
         width: 50%;
     }
+   
+    .team__item-name{
+        font-size: 25px;
+    }
+    .team__item-position{
+        font-size: 17px;
+    }
 }
 
 @media (max-width: 1180px){
@@ -241,7 +248,12 @@
         margin-top: -7px;
         margin-bottom: 40px;
     }
-    
+    .team__inner-item{
+        width: 100%;
+    }
+    .team__item-img{
+        
+    }
 }
 
 @media(max-width: 500px){
