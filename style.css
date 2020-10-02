@@ -132,16 +132,20 @@ img {
   display: none;
   background: transparent;
   border: none;
-  padding: 0;
+  padding: 5px 0 5px 0;
+  outline: none;
+  cursor: pointer;
 }
 
 .burger__line {
+  display: inline-block;
   position: relative;
   width: 35px;
   height: 3px;
   background-color: white;
   color: transparent;
-  cursor: pointer;
+  
+  
 }
 
 .burger__line::after,
