@@ -1,0 +1,270 @@
+
+
+@media (max-width: 1232px){
+    .team__inner-item{
+        height: auto;
+        width: 50%;
+    }
+}
+
+@media (max-width: 1180px){
+    .content__img-top{
+        left: 35%;
+    }
+    .content__img-bottom{
+        left: 65%;
+    }
+}
+
+@media (max-width: 1041px){
+    .content__block{
+        padding: 50px 30px;
+    }
+
+    .menu-item-link{
+        font-size: 15px;
+        
+    }
+    
+    .fab{
+        font-size: 15px;
+    }
+    .intro__title{
+        font-size: 95px;
+    }
+    .intro__text{
+        font-size: 17px;
+        letter-spacing: 11px;
+        margin-right: -20px;
+    }
+    .header-logo{
+        padding-right: 20px;
+    }
+    .header-logo .logo{
+        width: 60px;
+    }
+    
+    .work__inner-item{
+        width: 50%;
+    }
+    
+
+@media(max-width: 915px){
+    .content__block{
+        width: 100%;
+        text-align: center;
+        
+    }
+    .content__photo{
+        overflow: hidden;
+        width: 100%;
+    }
+    .content__block-text{
+        margin: 0 auto;
+    }
+    .content__block-reverse{
+        order: 1;
+    }
+    .content__photo-reverse{
+        order: 2;
+    }
+    .content__img{
+        
+        left: 0;
+        top: 0;
+        transform: translate3d(0,0,0);
+    }
+}
+   
+    
+    
+@media(max-width: 861px){
+    .intro__title{
+        margin-top: 185px
+    }
+}
+    .work__text{
+        font-size: 23px;
+    }
+    .btn__bottom{
+        display: none;
+    }
+    .intro{
+        height: auto;
+    }
+    .navbar__actions{
+        display: none;
+    } 
+    .burger{
+        display: block;
+    }
+    /* .intro__info{
+        padding: 00px 0;
+        margin-top: 100px;
+    } */
+    
+    .title {
+        font-size: 30px;
+    }
+    .feature__block-img{
+        width: 95px;
+        height: 95px;
+    }
+    .feature__block-img .img{
+        width: 25px;
+    }
+    .feature__block-title{
+        font-size: 14px;
+    }
+    .feature__block-text{
+        font-size: 11px;
+    }
+    .features{
+        padding: 70px 0 30px 0;
+    }
+    /* .key-feature__img{
+        max-width: 200px
+    } */
+    .key-feature__inner{
+        text-align: center;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .key-feature__content{
+        width: 100%;
+        align-items: center;
+        
+    }
+    .key-feature__photo{
+        width: 100%;
+        
+    }
+
+    .key-feature__img{
+       
+    }
+    .key-feature{
+        padding: 60px 0 60px 0;
+    }
+    .key-future__action{
+        margin-top: 30px;
+    }
+    .key-feature__title{
+        /* font-size: 15px; */
+        margin-bottom: 20px;
+    }
+    .key-feature__text{
+        /* font-size: 10px; */
+    }
+    .key-feature__btn{
+        text-align: left;
+        /* width: 240px; */
+        /* font-size: 10px; */
+    }
+    .key-feature__btn_medium{
+        /* width: 260px; */
+    }
+    .key-feature__btn_long{
+        /* width: 280px; */
+    }
+   .quick-action{
+       padding: 70px 0;
+   }
+   .form-action{
+       padding-top: 30px
+   }
+   .form-action__inner__private-date input{
+       width: 100%;
+   }
+   .map{
+       height: 250px;
+   }
+   .footer{
+       font-size: 10px;
+   }
+   .form-action__btn{
+       margin-bottom: 40px;
+   }
+}
+
+@media (max-width: 658px){
+    .feature__block{
+        width: 50%;
+        
+    }
+
+    .feature__block-title{
+        margin-bottom: 17px;
+    }
+    .work__inner{
+        padding: 30px 0;
+    }
+    .work__inner-item{
+        width: 100%;
+        
+    }
+    .quick-action{
+        padding: 50px 0;
+    }
+    .quick-action__item{
+        width: 100%;
+        margin-bottom: 30px;
+        
+        
+    }
+    
+    .quick-action__item:last-child{
+        margin-bottom: 0;
+    }
+    
+}
+
+@media(max-width: 607px){
+    .title{
+        font-size: 27px;
+    }
+    .form-action__title{
+        line-height: 1;
+    }
+
+    
+}
+@media(max-width: 581px){
+    .intro__title{
+        font-size: 65px;
+        
+    }
+    .intro__text{
+        font-size: 12px;
+        letter-spacing: 7px;
+        margin-top: -7px;
+        margin-bottom: 40px;
+    }
+    
+}
+
+@media(max-width: 500px){
+
+    .feature__block{
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .key-feature__btn{
+        width: 300px
+    }
+}
+
+@media(max-width: 402px){
+    .intro__title{
+        font-size: 45px
+    }
+
+    .intro__text{
+        font-size: 8px;
+        letter-spacing: 5px;
+        margin-top: -3px;
+    }
+
+}
