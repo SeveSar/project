@@ -194,7 +194,11 @@
        margin-bottom: 40px;
    }
 }
-
+@media (max-width: 735px){
+    .form-action__title{
+        line-height: 1;
+    }
+}
 @media (max-width: 658px){
     .feature__block{
         width: 50%;
