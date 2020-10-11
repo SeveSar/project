@@ -3,21 +3,12 @@
 
 
 
-// form.addEventListener("submit",function(event){
+form.addEventListener("submit",function(event){
 
-//     event.preventDefault();
-// })
+    event.preventDefault();
+    
+});
 
-// window.addEventListener('click',function (event){
-     
-//     if (event.target.getAttribute('data-action') == 'jsBurger'){
-//         dropDownMenu.style.display = 'block';
-//     } else if(event.target != dropDownMenu.get{
-//         dropDownMenu.style.display = 'none';
-//     }
-
-   
-// });
 
 const form = document.querySelector("#form-action");
 const btnForm = document.querySelector('#jsBtn-Form');
