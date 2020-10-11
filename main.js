@@ -68,13 +68,9 @@ $(function(){
             header.removeClass('fixed');
         }
         
-        
     });
 
-    $(window).on('click',function(event){
-        $(input).fadeToggle(2000);
-    })
-    
+   
 
 });  
 
