@@ -1,18 +1,18 @@
 *{
     box-sizing: border-box;
 }
-div{
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+/* div{
     color: blue;
     width: 270px;
     padding: 15px;
     margin: 10px;
-}
+} */
 
-img {
-    display: block;
-    max-width: 100%;
-    margin-left: 50px;
-}
+
 /* BEFORE AFTER только у парных тегов */
 p::after{
     /* position: absolute;
@@ -43,7 +43,7 @@ ul,li{
 
 
 .menuWrapper{
-    width: 300px;
+    width: 400px;
     background-color: teal;
     overflow-x: scroll;
 }
@@ -51,7 +51,7 @@ ul,li{
 .menu{
     
     padding: 14px;
-    min-width: 400px;
+    min-width: 800px;
     display: flex;
     justify-content: space-between;
     
@@ -63,4 +63,25 @@ ul,li{
 }
 .menu__item:last-child{
     margin-right: 0;
+}
+
+
+.block{
+    background-color: rgba(255,255,3,0.5);
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+}
+
+.content{
+    width: 50%;
+    margin-right: 25px;
+}
+
+.foto{
+    width: 50%;
+}
+
+.img{
+    max-width: 100%;
 }
