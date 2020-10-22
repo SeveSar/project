@@ -77,7 +77,10 @@
     }
     .intro{
         height: auto;
-        padding-top: 186px;
+        padding-top: 160px;
+    }
+    .btn__bottom{
+        display: none;
     }
     .intro__title{
         font-size: 95px;
@@ -294,9 +297,6 @@
 }
 @media(max-width: 600px){
     
-    .btn__bottom{
-        display: none;
-    }
     .intro{
         padding-top: 140px;
     }
@@ -359,3 +359,4 @@
     }
 
 }
+
