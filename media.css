@@ -232,17 +232,20 @@
         display: block;
         
     }
-
-   
-    .burger__line-active::before{
-        transform: rotate(-45deg);
-        padding: 0;
-        margin: 0;
+    
+    .burger-active .burger__line{
+        background-color: transparent;
     }
-    .burger__line-active::after{
+   
+    .burger-active .burger__line::before{
         transform: rotate(45deg);
         padding: 0;
-        margin: 0;
+        margin-bottom: -20px;
+    }
+    .burger-active .burger__line::after{
+        transform: rotate(-45deg);
+        padding: 0;
+        margin-top: 4px;
     }
     
 }

@@ -165,7 +165,9 @@ img {
   width: 35px;
   height: 3px;
   background-color: white;
+  transition: all .5s;
   color: transparent;
+  
 }
 
 .burger__line::after,
@@ -175,16 +177,17 @@ img {
   height: 100%;
   left: 0;
   background-color: white;
+  transition: all .5s;
 }
 
 .burger__line::after {
-  width: 40px;
+  width: 100%;
   top: 8px;
 }
 
 .burger__line::before {
   bottom: 8px;
-  width: 30px;
+  width: 100%;
 
 }
 
@@ -198,7 +201,7 @@ img {
   height: 100vh;
   font-size: 15px;
   box-shadow: 0 0 10px 0 black;
-
+  z-index: 20;
   background-color: rgba(51,50,48,.8);
   transition: all .5s linear;
   display: flex;
@@ -226,7 +229,18 @@ img {
   left: 0;
 }
 
-
+.overlay{
+  display: none;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+.overlay-active{
+  display: block;
+}
 
 
 
