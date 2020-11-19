@@ -85,7 +85,7 @@ $(function(){
     });
 
     function checkScroll (scrollPos, introH) {
-        if (scrollPos >= 200) {
+        if (scrollPos >= introH) {
             header.addClass('fixed');
            
         } else{
