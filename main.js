@@ -55,7 +55,7 @@ form.addEventListener('submit',function(event){
 
 $(function(){
 
-    let intro = $('#jsIntro');
+    let intro = $('#intro');
 
     // innerHeight с учётом паддинга
     let introH = intro.innerHeight();
@@ -94,7 +94,15 @@ $(function(){
         }
     }
 
-   
+//    Animate scroll
+
+    $('[data-action="jsMenu-item-link"]').on('click', function (e) {
+        e.preventDefault();
+        let contentName = $(this).attr('href');
+        let contentOffsetTop = $(contentName).offset().top;
+        
+        $('html, body').animate({scrollTop: contentOffsetTop - 70},500);
+    });
     
     
 
