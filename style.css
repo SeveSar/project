@@ -67,6 +67,7 @@ img {
 .header.fixed{
   position: fixed;
   background-color: #3D3C3A;
+  transition: all .3s;
 }
 
 .header.fixed .header__inner{
