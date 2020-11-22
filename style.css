@@ -100,6 +100,7 @@ img {
 
 .header-menu .menu-item {
   margin-right: 40px;
+  padding: 20px 0;
 }
 
 .header-menu .menu-item:last-child {
@@ -120,7 +121,7 @@ img {
   color: #c1b3b3;
 }
 
-.menu-item-link-active {
+.menu-item-active {
   border-bottom: 4px solid #11749e;
 }
 

@@ -59,49 +59,76 @@ $(function(){
 
     // innerHeight с учётом паддинга
     let introH = intro.innerHeight();
-    let featuresH = $("#features").innerHeight();
-    let contentH = $("#content").innerHeight();
-    let workH = $("#work").innerHeight();
-    let keyFutureH = $("#key-feature").innerHeight();
-    let teamH = $("#team").innerHeight();
-    let quickActionH = $("#quick-action").innerHeight();
-    let formActionH = $('#form-action').innerHeight();
-    
+    let introOffset = intro.offset().top;
+    let featuresOffset = $("#features").offset().top;
+    let contentOffset = $("#content").offset().top;
+    let workOffset = $("#work").offset().top;
+    let teamOffset = $("#team").offset().top;
+    let quickActionOffset = $("#quick-action").offset().top;
+    let formActionOffset = $('#form-action').offset().top;
+    let footerOffset = $('.footer').offset().top;
+    let menuItems = $('ul .menu-item');
+   
+
     let header = $('#header');
-    let scrollPos = $(window).scrollTop();
+    let scrollPos = $(window).scrollTop() + 113;
     checkScroll (scrollPos, introH);
+    currentLink (scrollPos);
+    
+    
+
     $(window).on('scroll resize', function(){
-      
         introH = intro.innerHeight();
         featuresH = $("#features").innerHeight();
         contentH = $("#content").innerHeight();
         workH = $("#work").innerHeight();
         keyFutureH = $("#key-feature").innerHeight();
-        scrollPos = $(this).scrollTop();
+        scrollPos = $(this).scrollTop() + 113;
         checkScroll (scrollPos, introH);
+        currentLink(scrollPos)
         
         
         
     });
 
     function checkScroll (scrollPos, introH) {
-        if (scrollPos >= introH) {
+        if (scrollPos > introH ) {
             header.addClass('fixed');
-           
         } else{
             header.removeClass('fixed');
-            
         }
     }
-
+    
+   
+    function currentLink (scrollPos) {
+        if (introOffset < scrollPos && scrollPos < featuresOffset) {
+            $(menuItems).eq(0).addClass('menu-item-active').siblings().removeClass('menu-item-active');
+        }
+        if (featuresOffset < scrollPos && scrollPos < contentOffset) {
+            $(menuItems).eq(1).addClass('menu-item-active').siblings().removeClass('menu-item-active');
+        }
+        if (contentOffset < scrollPos && scrollPos < workOffset) {
+            $(menuItems).eq(2).addClass('menu-item-active').siblings().removeClass('menu-item-active');
+        }
+        if (workOffset < scrollPos && scrollPos < quickActionOffset) {
+            $(menuItems).eq(3).addClass('menu-item-active').siblings().removeClass('menu-item-active');
+        }
+        if (quickActionOffset < scrollPos && scrollPos < formActionOffset) {
+            $(menuItems).eq(4).addClass('menu-item-active').siblings().removeClass('menu-item-active');
+        } 
+        if (teamOffset < scrollPos && scrollPos < footerOffset) {
+            $(menuItems).eq(5).addClass('menu-item-active').siblings().removeClass('menu-item-active');
+        }
+    }
 //    Animate scroll
-
+    
+   
     $('[data-action="jsMenu-item-link"]').on('click', function (e) {
         e.preventDefault();
         let contentName = $(this).attr('href');
         let contentOffsetTop = $(contentName).offset().top;
         
-        $('html, body').animate({scrollTop: contentOffsetTop - 70},500);
+        $('html, body').animate({scrollTop: contentOffsetTop - 111},500);
     });
     
     
