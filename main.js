@@ -56,7 +56,7 @@ form.addEventListener('submit',function(event){
 $(function(){
 
     let intro = $('#intro');
-
+    let header = $('#header');
     // innerHeight с учётом паддинга
     let introH = intro.innerHeight();
     let introOffset = intro.offset().top;
@@ -67,13 +67,13 @@ $(function(){
     let quickActionOffset = $("#quick-action").offset().top;
     let formActionOffset = $('#form-action').offset().top;
     let footerOffset = $('.footer').offset().top;
-    let menuItems = $('ul .menu-item');
-   
+    let menuItems = $('.header-menu .menu-item');
+    
 
-    let header = $('#header');
+    let headerH = header.innerHeight();
     let scrollPos = $(window).scrollTop() + 113;
-    checkScroll (scrollPos, introH);
-    currentLink (scrollPos);
+    checkScroll (scrollPos, headerH);
+    currentLink (scrollPos + 113);
     
     
 
@@ -83,23 +83,23 @@ $(function(){
         contentH = $("#content").innerHeight();
         workH = $("#work").innerHeight();
         keyFutureH = $("#key-feature").innerHeight();
-        scrollPos = $(this).scrollTop() + 113;
-        checkScroll (scrollPos, introH);
-        currentLink(scrollPos)
+        scrollPos = $(this).scrollTop();
+        checkScroll (scrollPos, headerH);
+        currentLink(scrollPos + 113)
         
         
         
     });
-
+// fixed header
     function checkScroll (scrollPos, introH) {
-        if (scrollPos > introH ) {
+        if (scrollPos > headerH ) {
             header.addClass('fixed');
         } else{
             header.removeClass('fixed');
         }
     }
     
-   
+//    active link
     function currentLink (scrollPos) {
         if (introOffset < scrollPos && scrollPos < featuresOffset) {
             $(menuItems).eq(0).addClass('menu-item-active').siblings().removeClass('menu-item-active');
@@ -128,7 +128,7 @@ $(function(){
         let contentName = $(this).attr('href');
         let contentOffsetTop = $(contentName).offset().top;
         
-        $('html, body').animate({scrollTop: contentOffsetTop - 111},500);
+        $('html, body').animate({scrollTop: contentOffsetTop - 105},500);
     });
     
     

@@ -51,7 +51,7 @@ ul,li{
 .menu{
     
     padding: 14px;
-    min-width: 800px;
+    min-width: 500px;
     display: flex;
     justify-content: space-between;
     
