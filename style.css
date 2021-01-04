@@ -62,6 +62,7 @@ img {
   z-index: 3;
   top: 0;
   left: 0;
+  border-bottom: 1px solid #868686;
   
 }
 
@@ -71,23 +72,27 @@ img {
   transition: all .3s;
 }
 
-.header.fixed .header__inner{
-  padding-top: 14px;
-}
-
 
 .header__inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 50px 0 14px 0;
+  padding: 25px 0 18px 0;
   width: 100%;
+
 }
 
-.header-logo {
+.header__logo {
   padding-right: 55px;
 }
-
+.header__logo-link{
+  display: block;
+  width: 70px;
+}
+.header__logo-link img {
+  display: block;
+  max-width: 100%;
+}
 
 .navbar__actions {
   display: flex;
@@ -100,7 +105,7 @@ img {
 
 .header-menu .menu-item {
   margin-right: 40px;
-  padding: 20px 0;
+  
 }
 
 .header-menu .menu-item:last-child {
@@ -113,7 +118,7 @@ img {
   font-family: "Myriad Pro";
   color: #fff;
   font-weight: normal;
-  padding: 25px 0;
+  padding: 23px 0;
   transition: color 0.2s linear;
 }
 
@@ -121,8 +126,8 @@ img {
   color: #c1b3b3;
 }
 
-.menu-item-active {
-  border-bottom: 4px solid #11749e;
+.menu-item-active .menu-item-link {
+  border-bottom: 5px solid #11749e;
 }
 
 .actions-item {
@@ -141,12 +146,7 @@ img {
   color: #c1b3b3;
 }
 
-.divider {
-  border: none;
-  border-bottom: 1px solid #868686;
-  margin: 0;
-  padding: 0;
-}
+
 
 .burger {
   display: none;
@@ -211,6 +211,7 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;  
+  overflow: auto;
 }
 
 .dropdown-menu .menu-item{

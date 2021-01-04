@@ -41,12 +41,10 @@
         letter-spacing: 16px;
         
     }
-    .header-logo{
+    .header__logo{
         padding-right: 20px;
     }
-    .header-logo .logo{
-        width: 60px;
-    }
+    
     
     .work__inner-item{
         width: 50%;
@@ -221,18 +219,20 @@
 }
 
 @media (max-width: 695px){
+    .header__inner {
+        padding: 12px 0 8px 0;
+    }
 
     .navbar__actions{
         display: none;
-    }
-    .header__inner{
-        padding-top: 14px;
     }
     .burger{
         display: block;
         
     }
-    
+    .header__logo-link {
+        width: 49px;
+    }
     .burger-active .burger__line{
         background-color: transparent;
     }
